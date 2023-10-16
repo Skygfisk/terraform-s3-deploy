@@ -34,7 +34,7 @@ resource "aws_s3_object" "cv" {
   depends_on = [ aws_s3_bucket_acl.b1 ]
 
   bucket = aws_s3_bucket.b1.id
-  key    = "CV"
+  key    = "CV-Odd"
   acl    = "public-read"
   source = "/home/user/Downloads/odd-cv-2023.pdf"
 }
